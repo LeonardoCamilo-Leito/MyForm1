@@ -1,0 +1,93 @@
+LeitoForm1
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Esports Form</title>
+    <style>
+         
+            form {
+                margin: 0 auto;
+                width: 400px;
+                padding: 1em;
+                border: 4px solid #CCC;
+                border-radius: 1em;
+            }
+
+            h1 {
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            label {
+                display: ruby-base;
+                width: 100px;
+                text-align: justify;
+                color: rgb(75, 110, 155);
+            }
+            
+    </style>
+</head>
+<body>
+        <form name="formulario" method="post" action="/send.php">
+            <h1>Formulario equipo Esports</h1>
+
+    <!-- Campo de entrada de nombre -->
+
+        <ol> <list><br><label>Nombre:</label></list></br>
+            <input type="text" name="nombre" value=""/>
+
+    <!-- Campo de entrada de telefono -->
+
+        <list><br><label>Teléfono:</label></list></br>
+            <input type="tel" name="telefono" placeholder=" XXX-XXX-XXXX"/>
+
+    <!-- Campo de entrada de email -->
+
+        <list><br><label>Email:</label></list></br>
+            <input type="email" name="correo" placeholder="nombre@dominio.com" />
+
+    <!-- Campo de entrada de url -->
+
+        <list><br><label>Página web:</label></list></br>
+            <input type="url" name="web" placeholder="https://pagina.com/" />
+        
+    <!-- Campo de entrada Game user -->
+    
+        <list><br><label>Usuario:</label></list></br>
+            <input type="text" name="nombre" placeholder="Game User" />
+
+    <!-- Campo de entrada de password -->
+
+        <list><br><label>Password:</label></list></br>
+            <input type="password" name="pass" placeholder="Contraseña" />
+
+    <!-- Campo de entrada de mes de registro -->   
+
+        <list><br><label>Mes de registro:</label></list></br>
+            <input type="month" name="mes"
+                value="2022-07" min="2022-07" max="2022-12" step="1" />
+
+    <!-- Campo de entrada de juego favorito -->
+
+        <list><br><label>Estilo de juego favorito:</label></list></br>
+            <select name="combo">
+            <option value="1">FPS</option>
+            <option value="2" selected>RPG</option> <!-- Opción por defecto -->
+            <option value="3">MMO</option> </select>
+
+    <!-- Campo de selección de archivo (foto) -->
+
+        <list><br><label>Foto:</label></list></br>
+            <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple />
+        
+    <!-- Campo de enviar datos suministrado -->
+
+           <br><input type="submit" value="Enviar"/></br>
+</ol>
+</form>
+</body>
+</html>
